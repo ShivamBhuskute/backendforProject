@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "node --env-file=.env src/index.js",
-    "dev": "nodemon -r dotenv src/index.js"
+    "devi": "nodemon -r dotenv src/index.js",
+    "dev": "nodemon --env-file=.env src/index.js"
   },
   "keywords": [
     "javascript",
