@@ -1,7 +1,8 @@
 import mongoose from "mongoose";
 import { DB_NAME } from "../constants.js"
 
-
+// 1. It takes time so always use async await
+// 2. Use error handling
 const connectDB = async () => {
     try {
         const connectionInstance = await mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`)
